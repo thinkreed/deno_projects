@@ -1,8 +1,34 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "outDir": "out",
-        "sourceMap": true
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noLib": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "deno_ls_plugin"
+      }
+    ],
+    "target": "esnext",
+    "paths": {
+      "deno": [
+        "C:/Users/think/.deno/deno.d.ts"
+      ],
+      "https://*": [
+        "C:/Users/think/.deno/deps/https/*"
+      ],
+      "http://*": [
+        "C:/Users/think/.deno/deps/http/*"
+      ]
     }
+  },
+  "include": [
+    "./**/*.ts"
+  ]
 }
